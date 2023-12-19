@@ -214,6 +214,10 @@ small{
   text-align: center;
 }
 
+.works-info{
+  margin: 20px 0;
+}
+
 .works-image img {
   object-fit: cover;
   /* width: 300px; */
@@ -294,7 +298,7 @@ small{
   .custom-nav {
     display: flex;
     flex-direction: column;
-    padding: 192px var(--phone-margin) !important;
+    padding: 2% var(--phone-margin) !important;
   }
 
   .primary-nav {
