@@ -1,0 +1,378 @@
+:root {
+  --padding-gap: 100px;
+  --margin-gap: 70px;
+  --phone-padding: 70px;
+  --phone-margin: 35px;
+  --primary-col: #a58ae3;
+  --secondary-col: #d5dcf2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2a2439;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p,
+h1,
+h3 {
+  color: var(--secondary-col);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: var(--padding-gap);
+}
+
+p,
+.skills-list {
+  font-size: 1.34rem;
+  color: var(--secondary-col);
+}
+
+small{
+  color: var(--secondary-col);
+}
+
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% var(--padding-gap);
+}
+
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.nav-item a:link,
+.nav-item a:visited {
+  color: var(--primary-col);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+}
+
+.nav-item a:hover {
+  transition: 0.5s ease-in;
+  text-shadow: 0px 0px 15px var(--primary-col);
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.logo a:link,
+.logo a:visited {
+  transition: 0.5s ease-in;
+  font-weight: bold;
+  color: #dcd2f4;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-shadow: 0px 0px 15px #7764a4;
+}
+
+#main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-status {
+  font-size: 1.92rem;
+}
+
+.header-name {
+  text-decoration: var(--primary-col) underline;
+}
+
+.header-img {
+  margin: var(--margin-gap);
+}
+
+.header-img img {
+  width: 400px;
+  height: auto;
+  transition: transform 0.5s ease-in;
+}
+
+.header-img img:hover {
+  box-shadow: 0 0 15px #bcb3f2;
+  transform: scale(1.15);
+  transition: 0.5s ease-in;
+}
+
+#about-me {
+  padding-top: 30px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: justify;
+}
+
+.section-headline {
+  text-align: center;
+  font-size: 24pt;
+  margin-bottom: 20px;
+}
+
+.skills-card {
+  border: 5px solid transparent;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #5b4c7d, #bcb3f2, #d5dcf2);
+  padding: 20px;
+  /* max-width: 400px; */
+  box-shadow: 0 0px 15px var(--primary-col);
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.51rem;
+}
+
+.skills-list {
+  padding: 16px;
+}
+
+.skills-list li {
+  list-style-type: square;
+}
+
+.list-of-skills-cards,
+.gallery-of-works {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  gap: 40px;
+}
+
+.works-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(147, 152, 251, 0.25);
+  box-shadow: 0 0px 15px rgb(187, 147, 251);
+  color: var(--primary-col);
+}
+
+.works-info h3 {
+  text-align: center;
+}
+
+.works-image img {
+  object-fit: cover;
+  /* width: 300px; */
+  height: auto;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+}
+
+.btn-repo {
+  text-align: center;
+}
+
+.btn-repo button {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 10px;
+  width: auto;
+  max-width: 100%;
+  background: transparent;
+  color: var(--secondary-col);
+  height: auto;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  font-size: 14pt;
+  margin: 20px;
+}
+
+.btn-repo button:hover {
+  background-color: var(--primary-col);
+  box-shadow: 0 0px 15px var(--primary-col);
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+
+#contact-me {
+  background-color: #2a2439;
+}
+
+.contact-background {
+  /* display: block; */
+  text-align: center;
+  font-size: 2.508rem;
+  background-image: linear-gradient(to right, #7268a9,#bcb3f2 , #d5dcf2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contact-socials a {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.51rem;
+  padding: 0 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.contact-socials a:hover {
+  text-shadow: 0px 0px 5px var(--secondary-col);
+}
+
+.footer-line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .gallery-of-works,
+  .list-of-skills-cards {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 192px var(--phone-margin) !important;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .primary_nav li {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .navbar-toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: var(--primary-col);
+    background: transparent;
+    border-color: transparent;
+    /* transition: all 0.3s linear; */
+    cursor: pointer;
+    display: block;
+  }
+
+  .personal-heading {
+    display: flex;
+    margin-left: 2%;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+
+  .logo {
+    margin-left: -10px;
+  }
+
+  .show-nav {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+  }
+
+  section {
+    padding: var(--phone-margin);
+  }
+
+  .header-img {
+    margin: var(--phone-margin);
+  }
+
+  .header-status {
+    margin-bottom: 30.2px;
+  }
+
+  #about-me {
+    margin-top: -35px;
+  }
+
+  .gallery-of-works,
+  .list-of-skills-cards {
+    flex-direction: column;
+  }
+
+  .works-image img {
+    max-width: 100%;
+    object-fit: cover;
+    /*    width: 300px; */
+    height: auto;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+  }
+
+  .heading-background {
+    display: inline-block;
+    font-size: 6vw;
+  }
+}
